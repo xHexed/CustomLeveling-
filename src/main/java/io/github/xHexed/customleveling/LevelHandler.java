@@ -39,7 +39,7 @@ public class LevelHandler implements Listener {
         ArrayList<String> levelList = new ArrayList<>(plugin.getConfig().getStringList("levels"));
 
         // If there are levels defined in the config
-        if (!levelList.get(0).equals("none")) {
+        if (!levelList.get(0).equalsIgnoreCase("none")) {
             Player player = event.getPlayer();
             for (String s : levelList) {
                 int levelCompare = Integer.parseInt(s.substring(0, 1)) - 1;
@@ -49,7 +49,8 @@ public class LevelHandler implements Listener {
                     float xpBarCurrent = player.getExp() * xpAmount;
                     float xpBarNew = (xpBarCurrent + event.getAmount()) / xpAmount;
                     event.setAmount(0);
-                    player.setExp(xpBarNew);
+                    player.setExp(xpBarNew - (int) xpBarNew);
+                    player.giveExpLevels((int) xpBarNew);
                     return;
                 }
             }
