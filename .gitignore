@@ -45,7 +45,6 @@ Temporary Items
 # Output files and others
 target/
 \.gitattributes
-target/classes/io/github/mac_genius/customleveling/Commands.class
-target/classes/io/github/mac_genius/customleveling/CustomLeveling.class
-target/classes/io/github/mac_genius/customleveling/LevelHandler.class
 .settings/
+.classpath
+.project
