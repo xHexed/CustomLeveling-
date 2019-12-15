@@ -1,4 +1,4 @@
-package io.github.mac_genius.customleveling;
+package io.github.xHexed.customleveling;
 
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;

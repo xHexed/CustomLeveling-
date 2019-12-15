@@ -1,4 +1,4 @@
-package io.github.mac_genius.customleveling;
+package io.github.xHexed.customleveling;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
