@@ -1,6 +1,7 @@
 name: CustomLeveling
-main: io.github.mac_genius.customleveling.CustomLeveling
-version: 1.0
+main: io.github.xHexed.customleveling.CustomLeveling
+authors: [Mac-Genius, xHexed]
+version: ${project.version}
 permissions:
     cl.*:
         description: Gives access to all commands for the plugin
